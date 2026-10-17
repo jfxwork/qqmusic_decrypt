@@ -1,0 +1,11 @@
+# QQ音乐加密音乐 解密 / 转换 GUI —— Python 依赖
+#
+# 安装：
+#   python -m pip install -r requirements.txt
+#
+# 注意：转 MP3 还需要 ffmpeg（不是 Python 包），
+#      请把 ffmpeg.exe 放到本目录下的 ffmpeg\bin\ ，或加入系统 PATH，
+#      或在界面里点「指定…」手动选择。
+
+frida>=16.0.0
+tkinterdnd2>=0.4.0
