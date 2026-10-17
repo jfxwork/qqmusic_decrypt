@@ -3,7 +3,27 @@
 把 QQ音乐下载的加密音乐（`.mgg` / `.mflac` / `.mgg1` / `.mflac0` / `.mggl` 等）**拖进窗口**，
 自动解密成 `ogg` / `flac`，并可以直接转成 `mp3`。
 
-界面：`qqmusic_gui.py`　启动：双击 `启动工具.bat`
+![界面预览](界面预览.png)
+
+---
+
+## 下载即用（推荐）
+
+到 [Releases](../../releases) 下载 **`qqmusic_gui.zip`**，解压后双击 `qqmusic_gui.exe` 即可。
+
+这个包是**免安装**的 —— 已经内置了 Python 运行时、frida、tkinterdnd2 和 ffmpeg，
+**不需要装 Python，也不需要 pip install 任何东西**。
+
+唯一前提：**先启动 QQ音乐并登录**（解密代码在 QQ音乐自己的进程里）。
+
+### 或者用源码运行
+
+```bat
+python -m pip install frida tkinterdnd2
+python qqmusic_gui.py
+```
+
+或双击 `启动工具.bat`。转 MP3 另需 ffmpeg（要带 `libmp3lame`）。
 
 ---
 

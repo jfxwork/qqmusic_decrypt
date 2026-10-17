@@ -16,8 +16,18 @@
 
 ## GUI 版本（Windows · 拖拽式）
 
-`python-gui/` 是一个 Python 图形界面版本：把加密音乐**直接拖进窗口**即可自动解密，
+`python-gui/` 是一个图形界面版本：把加密音乐**直接拖进窗口**即可自动解密，
 并可以一键转成 MP3。
+
+![界面预览](python-gui/界面预览.png)
+
+### 下载即用（推荐）
+
+到 **Releases** 下载 **`qqmusic_gui.zip`**，解压后双击 `qqmusic_gui.exe` 即可。
+
+免安装 —— 已内置 Python 运行时、frida、tkinterdnd2 和 ffmpeg，
+**不需要装 Python，也不需要 pip install 任何东西**。
+唯一前提：**先启动 QQ音乐并登录**。
 
 * 输出格式：**原生**（`mgg→ogg`、`mflac→flac`）／**MP3**（128~320 kbps）／**原生 + MP3**
 * 支持一次拖入多个文件或整个文件夹（递归查找）
